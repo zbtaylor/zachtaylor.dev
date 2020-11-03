@@ -42,19 +42,17 @@ export default function Home({ allPostsData, allProjectsData }) {
         <Emoji hexcode="&#127959;&#65039;" />
         <h2 className="heading">Projects</h2>
         <ul className="list">
-          {allProjectsData.map(
-            ({ id, date, title, repo, link, description }) => (
-              <li className="list-item" key={id}>
-                <Link href={`${link ? link : repo}`}>{title}</Link>
-                <small className="light-text">
-                  <p>{description}</p>
-                </small>
-                <Link href={`${repo}`}>
-                  <a className="button button-small pull-right">Repo</a>
-                </Link>
-              </li>
-            )
-          )}
+          {allProjectsData.map(({ id, title, repo, link, description }) => (
+            <li className="list-item" key={id}>
+              <Link href={`${link ? link : repo}`}>{title}</Link>
+              <small className="light-text">
+                <p>{description}</p>
+              </small>
+              <Link href={`${repo}`}>
+                <a className="button button-small pull-right">Repo</a>
+              </Link>
+            </li>
+          ))}
         </ul>
       </section>
     </Layout>
