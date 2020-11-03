@@ -5,7 +5,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 * {
@@ -17,11 +17,106 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 img {
   max-width: 100%;
   display: block;
+}
+
+/* Layout */
+
+.container {
+  max-width: 48rem;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+/* Navigation */
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-navigation a {
+  color: black;
+  font-weight: bold;
+}
+
+.main-navigation nav a {
+  padding-left: 60px;
+}
+
+/* Hero */
+
+.hero {
+  padding: 3rem 0;
+}
+
+.hero h1,
+.hero p {
+  font-size: 1.75rem;
+}
+
+.hero h1 {
+  margin-bottom: 0px;
+}
+
+.hero p {
+  margin-top: 0px;
+}
+
+/* Emoji */
+
+.emoji {
+  font-size: 2rem;
+  display: inline;
+  margin-left: -3rem;
+  line-height: 2rem;
+}
+
+/* Typography */
+
+.heading {
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  margin: 0 0 1.25rem;
+}
+
+.light-text {
+  color: #999;
+}
+
+/* Buttons */
+
+.button {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #dee4e0;
+  border-radius: 3px;
+  color: #3e3e3e;
+}
+
+.button-small {
+  font-size: 14px;
+}
+
+/* Projects */
+
+.projects-links {
+  display: flex;
+  justify-content: space-between;
 }
